@@ -39,7 +39,7 @@ export default function Home() {
       <TextField
         sx={{ width: "100%", maxWidth: "500px" }}
         size="small"
-        label="Search by common name and capital city"
+        label="Search by country name and capital city"
         onChange={(event) => {
           setSearchText(event.target.value);
         }}
