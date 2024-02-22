@@ -88,7 +88,7 @@ export default function CountryTableComponent(
                     {row.capital?.toString() ?? "-"}
                   </TableCell>
                   <TableCell style={{ fontSize: '30px' }} key={row.name?.common} align="center">
-                    {row.flag ?? "-"}
+                    <img src={row.flags?.png} width={30}></img>
                   </TableCell>
                 </TableRow>
               ))}
