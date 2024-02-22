@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import CountryModel from "./model/CountryModel";
-import { Backdrop, TextField } from "@mui/material";
+import { Backdrop, CircularProgress, TextField } from "@mui/material";
 import CountryTableComponent from "./component/CountryTableComponent";
 
 export default function Home() {
@@ -63,7 +63,9 @@ export default function Home() {
       <Backdrop
         sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={isLoad}
-      ></Backdrop>
+      >
+        <CircularProgress color="inherit" />
+      </Backdrop>
     </main>
   );
 
